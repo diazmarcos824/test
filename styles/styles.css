@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "spartan";
+    src: url(assets/Spartan-SemiBold.ttf);
+}
+
+.nav__text{
+    font-family: "spartan";
+    font-weight: 600;
+    font-size: 17px; /*1.06rem*/
+    color: #000;
+}
+
+.nav__text:hover{
+    border-bottom: #00E6CA solid 2px;
+    color: #000 !important;
+    padding-bottom: 0px !important;
+}
+
+.nav--resize{
+    width: 100vw;
+    margin-top: 40px; /*6.2vh*/
+}
+
+.nav__li--padding{
+    padding-inline: 12px;
+}
