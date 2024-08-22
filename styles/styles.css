@@ -3,6 +3,7 @@
     src: url(assets/Spartan-SemiBold.ttf);
 }
 
+/*------------------------------------------------NAV SECTION------------------------------------------------*/
 .nav__text{
     font-family: "spartan";
     font-weight: 600;
@@ -24,3 +25,65 @@
 .nav__li--padding{
     padding-inline: 12px;
 }
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------LAND SECTION------------------------------------------------*/
+
+.section--land{
+    margin-top: 5%;
+    width: 83.53vw;
+    display: flex;
+}
+
+.section--land > .row > .col{
+    padding-inline: 0;
+}
+
+.section__content{
+    margin-block: 10px;
+}
+
+.column__left{
+    padding-left: 0;
+    max-width: 41% !important;
+}
+
+.section__chip-test{
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #F551FF;
+    padding: 6px 10px;
+    color: #fff;
+}
+
+.section__h2{
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 88px;
+}
+
+.section__p{
+    font-family: "mulish";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.img__background{
+    position: relative;
+    z-index: 0;
+    left: 0;
+    max-width: 80%;
+}
+
+.img__team{
+    position: absolute;
+    bottom: 10%;
+    max-width: 90%;
+    right: 0px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
