@@ -19,26 +19,89 @@
 }
 
 /*------------------------------------------------NAV SECTION------------------------------------------------*/
-.nav__text {
-    font-family: "Spartan", sans-serif;
-    font-weight: 600;
-    font-size: 17px; /*1.06rem*/
+
+/*------------------------------------------------NAV SECTION------------------------------------------------*/
+/*------------------------------------------------NAV SECTION------------------------------------------------*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff; /* Cambia esto al color de fondo deseado */
+}
+
+.nav__logo-img {
+    height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.nav__toggle {
+    display: none; /* Oculta el botón del menú en pantallas grandes */
+    cursor: pointer;
+}
+
+.nav__toggle-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+/* Menú desplegable */
+.nav__menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-left: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
     color: #000;
+    font-family: "spartan";
+    font-weight: 600;
+    font-size: 17px;
 }
 
-.nav__text:hover {
-    border-bottom: 2px solid #00E6CA;
+.nav__link:hover {
+    border-bottom: #00E6CA solid 2px;
     color: #000 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 0px !important;
+    text-decoration: none;
+    
 }
 
-.nav--resize {
-    width: 100vw;
-    margin-top: 40px; /*6.2vh*/
-}
+/* Estilos para el menú hamburguesa */
+@media (max-width: 768px) {
+    .nav__menu {
+        display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+        position: absolute;
+        top: 60px; /* Ajusta según la altura del header */
+        right: 0;
+        background-color: #fff; /* Cambia esto al color de fondo deseado */
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        z-index: 1000;
+    }
 
-.nav__li--padding {
-    padding-inline: 12px;
+    .nav__menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .nav__toggle {
+        display: block; /* Muestra el botón del menú en pantallas pequeñas */
+    }
+
+    .nav__item {
+        margin: 15px 0; /* Espaciado para los ítems del menú en pantallas pequeñas */
+    }
 }
 
 /* Responsive Design for Nav Section */
@@ -53,6 +116,19 @@
 
     .nav__li--padding {
         padding-inline: 8px; /* Menos espacio entre los elementos del menú */
+    }
+
+    .row--left{
+        width: 100% !important;
+    }
+
+    .section--land{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column__left{
+        display:block
     }
 }
 
