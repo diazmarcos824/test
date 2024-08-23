@@ -31,9 +31,9 @@
 
 .section--land{
     margin-top: 5%;
-    width: 80vw !important;
     display: flex;
-    max-height: 597px;
+    max-width: 1390px !important;
+    padding-inline: 5% !important;
 }
 
 .section--land > .row > .col{
@@ -74,19 +74,24 @@
     line-height: 28px;
 }
 
-.img__background{
+.article__images{
     position: relative;
+    max-width: 100%;
+}
+
+.img__background{
+    position: absolute;
     z-index: 0;
-    left: 0;
     max-width: 80%;
 }
 
-.img__team{
+.img__article{
     position: absolute;
-    bottom: 10%;
-    max-width: 85%;
-    right: 0px;
-}
+    z-index: 1;
+    max-width: 90%;
+    margin-top: 6%;
+    right: 0;
+};
 
 @media (min-width: 1200px) {
     .container {
@@ -102,9 +107,8 @@
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     margin-inline: 4%;
-    margin-block: 4%;
+    margin-block: 8%;
 }
-
 
 .cards{
     text-align: center;
@@ -196,11 +200,6 @@
 .card__right-site{
     text-align: left;
     padding: 15px 0;
-}
-
-.article__images{
-    position: relative;
-    max-width: 100%;
 }
 
 .background__img{
