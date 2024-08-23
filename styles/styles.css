@@ -1,6 +1,9 @@
 @font-face {
     font-family: "spartan";
-    src: url(assets/Spartan-SemiBold.ttf);
+    src: url(assets/Spartan-Regular.ttf);
+
+    font-family: "source sans pro";
+    src: url(assets/SourceSansPro-Regular.ttf);
 }
 
 /*------------------------------------------------NAV SECTION------------------------------------------------*/
@@ -260,6 +263,78 @@
 
 .section--call-to-action{
     background-color: #2820FC;
+    margin-block: 4%;
 }
 
+.container__divs{
+    max-width: 65%;
+    margin-inline: auto;
+    padding-block: 3%;
+}
+
+.container__h3--subscribe{
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+}
+
+.container__text--subscribe{
+    font-family: "mulish";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+.container__input{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+}
+
+
+.form__input{
+    background-color: #4039fc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-bottom: #fff solid 1px;
+    width: 20vw;
+    margin-right: 20px;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    outline: none;
+}
+
+.form__input::placeholder{
+    color: #fff;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.button--subscribe{
+    padding: 8px 44px;
+    gap: 10px;
+    border: #00E6CA solid 1px;
+    background-color: #00E6CA;
+    color: #fff;
+    font-family: "source sans pro";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.input--subscribe{
+    max-width: 100%;
+}
 /*-----------------------------------------------------------------------------------------------------------*/
