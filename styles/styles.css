@@ -123,7 +123,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    text-wrap:pretty;
+    text-wrap: pretty;
 }
 
 .card__button{
@@ -135,5 +135,81 @@
     color: #fff;
     padding: 4px 28px;
     border: #2820FC solid 1px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------LATEST ARTICLES---------------------------------------------*/
+
+.title__h3--latest-articles{
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.section--latest-articles{
+    width: 80vw !important;
+}
+
+.container__card{
+    margin: 20px !important;
+}
+
+.article__card{
+    flex-wrap: nowrap !important;
+}
+
+.article__title{
+    font-family: "mulish";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 6%;
+}
+
+.article__text{
+    font-family: "mulish";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #161B3D;
+    margin-top: 6%;
+}
+
+.article__user-name{
+    font-family: "mulish";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #BDBDBD;
+}
+
+.article__data{
+    font-family: "mulish";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #7B7485;
+    margin-right: 10px;
+}
+
+.card__right-site{
+    text-align: left;
+    padding: 15px 0;
+}
+
+.article__images{
+    position: relative;
+    max-width: 100%;
+}
+
+.background__img{
+    position: absolute;
+    margin-left: -5%;
+}
+
+.article__img{
+    position: absolute;
+    margin-top: 5%;;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
