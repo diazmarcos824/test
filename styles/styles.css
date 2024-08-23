@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: "Spartan";
     src: url(assets/Spartan-Regular.ttf);
@@ -28,6 +33,7 @@
     align-items: center;
     padding: 1rem;
     background-color: #fff; /* Cambia esto al color de fondo deseado */
+    margin-inline: 10%;
 }
 
 .nav__logo-img {
@@ -72,7 +78,7 @@
     color: #000 !important;
     padding-bottom: 0px !important;
     text-decoration: none;
-    
+
 }
 
 /* Estilos para el menú hamburguesa */
@@ -118,18 +124,31 @@
         padding-inline: 8px; /* Menos espacio entre los elementos del menú */
     }
 
-    .row--left{
-        width: 100% !important;
+    #img__div, .background__img, .container__img--about-us{
+        display:none
     }
 
-    .section--land{
-        display: flex;
-        flex-direction: row;
+    .nav{
+        margin: 0;
     }
 
     .column__left{
-        display:block
+        height: 90vh;
     }
+
+    .container__about-us{
+        margin-inline: auto;
+    }
+
+    .container__input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button--subscribe{
+        margin-block: 5%;
+    }
+
 }
 
 /*-----------------------------------------------LAND SECTION------------------------------------------------*/
