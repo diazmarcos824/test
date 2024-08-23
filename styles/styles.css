@@ -216,10 +216,13 @@
 /*---------------------------------------------------ABOUT US------------------------------------------------*/
 
 .section--about-us{
-    display: flex;
-    flex-wrap: nowrap !important;
-    position: relative;
+    display: block;
+    max-height: fit-content;
+}
+
+.container__section{
     margin-top: 2%;
+    position: relative;
 }
 
 .container__img--about-us{
@@ -251,4 +254,12 @@
     color: #fff;
     border: #00E6CA solid 1px;
 }
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------CALL TO ACTION----------------------------------------------*/
+
+.section--call-to-action{
+    background-color: #2820FC;
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
