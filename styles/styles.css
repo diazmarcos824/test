@@ -65,6 +65,7 @@
     font-weight: 700;
     font-size: 60px;
     line-height: 88px;
+    margin-top: 4%;
 }
 
 .section__p{
@@ -210,5 +211,44 @@
 .article__img{
     position: absolute;
     margin-top: 5%;;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------ABOUT US------------------------------------------------*/
+
+.section--about-us{
+    display: flex;
+    flex-wrap: nowrap !important;
+    position: relative;
+    margin-top: 2%;
+}
+
+.container__img--about-us{
+    max-width: 100%;
+    position: absolute;
+}
+
+.container__about-us{
+    background-color: #F7F7F7;
+    padding: 40px;
+    gap: 10px;
+    max-width: 75%;
+    position: absolute;
+    left: 33%;
+    margin-top: 11.5%;
+}
+
+.container__text--about-us{
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000;
+}
+
+.container__button--about-us{
+    padding: 4px 28px;
+    background-color: #00E6CA;
+    color: #fff;
+    border: #00E6CA solid 1px;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
