@@ -1,59 +1,81 @@
 @font-face {
-    font-family: "spartan";
+    font-family: "Spartan";
     src: url(assets/Spartan-Regular.ttf);
+}
 
-    font-family: "source sans pro";
+@font-face {
+    font-family: "Source Sans Pro";
     src: url(assets/SourceSansPro-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Mulish";
+    src: url(assets/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/Roboto-Regular.ttf);
+}
+
 /*------------------------------------------------NAV SECTION------------------------------------------------*/
-.nav__text{
-    font-family: "spartan";
+.nav__text {
+    font-family: "Spartan", sans-serif;
     font-weight: 600;
     font-size: 17px; /*1.06rem*/
     color: #000;
 }
 
-.nav__text:hover{
-    border-bottom: #00E6CA solid 2px;
+.nav__text:hover {
+    border-bottom: 2px solid #00E6CA;
     color: #000 !important;
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
 }
 
-.nav--resize{
+.nav--resize {
     width: 100vw;
     margin-top: 40px; /*6.2vh*/
 }
 
-.nav__li--padding{
+.nav__li--padding {
     padding-inline: 12px;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Responsive Design for Nav Section */
+@media (max-width: 768px) {
+    .nav--resize {
+        margin-top: 20px; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .nav__text {
+        font-size: 15px; /* Reducción del tamaño de fuente */
+    }
+
+    .nav__li--padding {
+        padding-inline: 8px; /* Menos espacio entre los elementos del menú */
+    }
+}
 
 /*-----------------------------------------------LAND SECTION------------------------------------------------*/
 
-.section--land{
+.section--land {
     margin-top: 5%;
     display: flex;
     max-width: 1390px !important;
     padding-inline: 5% !important;
 }
 
-.section--land > .row > .col{
-    padding-inline: 0;
-}
-
-.section__content{
+.section__content {
     margin-block: 10px;
 }
 
-.column__left{
+.column__left {
     padding-left: 0;
     max-width: 41% !important;
 }
 
-.section__chip-test{
-    font-family: "roboto";
+.section__chip-test {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -63,49 +85,77 @@
     color: #fff;
 }
 
-.section__h2{
-    font-family: "spartan";
+.section__h2 {
+    font-family: "Spartan", sans-serif;
     font-weight: 700;
     font-size: 60px;
     line-height: 88px;
     margin-top: 4%;
 }
 
-.section__p{
-    font-family: "mulish";
+.section__p {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
 }
 
-.article__images{
+.article__images {
     position: relative;
     max-width: 100%;
 }
 
-.img__background{
+.img__background {
     position: absolute;
     z-index: 0;
     max-width: 80%;
 }
 
-.img__article{
+.img__article {
     position: absolute;
     z-index: 1;
     max-width: 90%;
     margin-top: 6%;
     right: 0;
-};
+}
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1640px !important;
+/* Responsive Design for Land Section */
+@media (max-width: 768px) {
+    .section--land {
+        flex-direction: column;
+        padding-inline: 2% !important;
+    }
+
+    .column__left {
+        max-width: 100% !important;
+    }
+
+    .section__h2 {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .section__p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .img__article {
+        margin-top: 10%;
+        max-width: 100%;
+        position: relative;
+        right: 0;
+    }
+
+    .img__background {
+        max-width: 100%;
+        position: relative;
     }
 }
-/*-----------------------------------------------------------------------------------------------------------*/
+
 /*-----------------------------------------------CONTAINER CARDS---------------------------------------------*/
 
-.section--cards{
+.section--cards {
     display: grid;
     gap: 2rem;
     grid-auto-rows: 22rem;
@@ -114,69 +164,94 @@
     margin-block: 8%;
 }
 
-.cards{
+.cards {
     text-align: center;
 }
 
-.card__title{
-    font-family: "spartan";
+.card__title {
+    font-family: "Spartan", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 44px;
     margin-top: 35px;
 }
 
-.card__paragraph{
-    font-family: "mulish";
+.card__paragraph {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     text-wrap: pretty;
 }
 
-.card__button{
-    font-family: "spartan";
+.card__button {
+    font-family: "Spartan", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     background-color: #2820FC;
     color: #fff;
     padding: 4px 28px;
-    border: #2820FC solid 1px;
+    border: 1px solid #2820FC;
+    cursor: pointer;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Responsive Design for Container Cards */
+@media (max-width: 768px) {
+    .section--cards {
+        grid-template-columns: 1fr;
+        margin-inline: 2%;
+    }
+
+    .card__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .card__paragraph {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card__button {
+        font-size: 14px;
+        padding: 4px 20px;
+    }
+}
+
 /*-----------------------------------------------LATEST ARTICLES---------------------------------------------*/
 
-.title__h3--latest-articles{
-    font-family: "spartan";
+.title__h3--latest-articles {
+    font-family: "Spartan", sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
     text-align: center;
 }
 
-.section--latest-articles{
+.section--latest-articles {
     width: 80vw !important;
+    margin-inline: auto;
 }
 
-.container__card{
+.container__card {
     margin: 20px !important;
 }
 
-.article__card{
+.article__card {
     flex-wrap: nowrap !important;
 }
 
-.article__title{
-    font-family: "mulish";
+.article__title {
+    font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
     margin-top: 6%;
 }
 
-.article__text{
-    font-family: "mulish";
+.article__text {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -184,16 +259,16 @@
     margin-top: 6%;
 }
 
-.article__user-name{
-    font-family: "mulish";
+.article__user-name {
+    font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     color: #BDBDBD;
 }
 
-.article__data{
-    font-family: "mulish";
+.article__data {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 21px;
@@ -201,40 +276,69 @@
     margin-right: 10px;
 }
 
-.card__right-site{
+.card__right-site {
     text-align: left;
     padding: 15px 0;
 }
 
-.background__img{
+.background__img {
     position: absolute;
     margin-left: -5%;
 }
 
-.article__img{
+.article__img {
     position: absolute;
-    margin-top: 5%;;
+    margin-top: 5%;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Responsive Design for Latest Articles */
+@media (max-width: 768px) {
+    .section--latest-articles {
+        width: 90vw !important;
+    }
+
+    .article__card {
+        flex-wrap: wrap !important;
+        text-align: center;
+    }
+
+    .article__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .article__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .background__img,
+    .article__img {
+        position: relative;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
 /*---------------------------------------------------ABOUT US------------------------------------------------*/
 
-.section--about-us{
+.section--about-us {
     display: block;
     max-height: fit-content;
 }
 
-.container__section{
+.container__section {
     margin-top: 2%;
     position: relative;
 }
 
-.container__img--about-us{
+.container__img--about-us {
     max-width: 100%;
     position: absolute;
     padding: 0 !important;
 }
 
-.container__about-us{
+.container__about-us {
     background-color: #F7F7F7;
     padding: 40px;
     gap: 10px;
@@ -244,37 +348,57 @@
     margin-top: 11.5%;
 }
 
-.container__text--about-us{
-    font-family: "Mulish";
+.container__text--about-us {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
     color: #000;
 }
 
-.container__button--about-us{
+.container__button--about-us {
     padding: 4px 28px;
     background-color: #00E6CA;
     color: #fff;
-    border: #00E6CA solid 1px;
+    border: 1px solid #00E6CA;
+    cursor: pointer;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Responsive Design for About Us */
+@media (max-width: 768px) {
+    .container__about-us {
+        position: relative;
+        max-width: 90%;
+        left: 0;
+        margin-top: 5%;
+    }
+
+    .container__text--about-us {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .container__button--about-us {
+        font-size: 16px;
+        padding: 4px 20px;
+    }
+}
 
 /*-----------------------------------------------CALL TO ACTION----------------------------------------------*/
 
-.section--call-to-action{
+.section--call-to-action {
     background-color: #2820FC;
     margin-block: 4%;
 }
 
-.container__divs{
+.container__divs {
     max-width: 65%;
     margin-inline: auto;
     padding-block: 3%;
 }
 
-.container__h3--subscribe{
-    font-family: "spartan";
+.container__h3--subscribe {
+    font-family: "Spartan", sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
@@ -282,8 +406,8 @@
     color: #fff;
 }
 
-.container__text--subscribe{
-    font-family: "mulish";
+.container__text--subscribe {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
@@ -291,91 +415,110 @@
     color: #fff;
 }
 
-.container__input{
+.container__input {
     max-width: fit-content;
     display: flex;
     align-items: center;
     margin-inline: auto;
 }
 
-
-.form__input{
+.form__input {
     background-color: #4039fc;
     color: #fff;
     padding: 10px;
     border: none;
-    border-bottom: #fff solid 1px;
+    border-bottom: 1px solid #fff;
     width: 20vw;
     margin-right: 20px;
-    font-family: "roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     outline: none;
 }
 
-.form__input::placeholder{
+.form__input::placeholder {
     color: #fff;
-    font-family: "roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
 }
 
-.button--subscribe{
+.button--subscribe {
     padding: 8px 44px;
     gap: 10px;
-    border: #00E6CA solid 1px;
+    border: 1px solid #00E6CA;
     background-color: #00E6CA;
     color: #fff;
-    font-family: "source sans pro";
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     cursor: pointer;
 }
 
-.input--subscribe{
-    max-width: 100%;
+/* Responsive Design for Call to Action */
+@media (max-width: 768px) {
+    .container__divs {
+        max-width: 90%;
+    }
+
+    .form__input {
+        width: 70vw;
+        margin-right: 10px;
+    }
+
+    .button--subscribe {
+        padding: 8px 28px;
+        font-size: 18px;
+    }
+
+    .container__h3--subscribe {
+        font-size: 32px;
+    }
+
+    .container__text--subscribe {
+        font-size: 18px;
+    }
 }
-/*-----------------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------FOOTER--------------------------------------------------*/
 
-.section--footer{
+.section--footer {
     width: 80vw !important;
     padding: 0 !important;
 }
 
-.footer__principal{
+.footer__principal {
     padding: 0 !important;
     margin-left: 0 !important;
 }
 
-.line{
+.line {
     max-width: 100%;
-    border-bottom: #161B3D solid 1px;
+    border-bottom: 1px solid #161B3D;
     margin-bottom: 5%;
 }
 
-.container__footer{
+.container__footer {
     margin-bottom: 5%;
 }
 
-.margin-reset{
+.margin-reset {
     margin-inline: 0 !important;
 }
 
-.separator{
+.separator {
     margin-inline: 40px;
 }
 
-.footer__logo{
+.footer__logo {
     margin-bottom: 5%;
 }
 
-.footer__text{
-    font-family: "mulish";
+.footer__text {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -383,40 +526,60 @@
     padding-bottom: 10px;
 }
 
-.footer__titles{
-    font-family: "spartan";
+.footer__titles {
+    font-family: "Spartan", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 34px;
     color: #BDBDBD;
 }
 
-.footer__menu{
+.footer__menu {
     list-style: none;
     padding: 0;
 }
 
-.footer__item{
-    font-family: "mulish";
+.footer__item {
+    font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     color: #000;
 }
 
-.footer__item:hover{
+.footer__item:hover {
     text-decoration: none;
 }
 
-.footer__span{
-    font-family: "mulish";
+.footer__span {
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
 }
 
-.copyrithg{
+.copyrithg {
     padding: 0;
     margin-bottom: 5%;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .section--footer {
+        width: 90vw !important;
+    }
+
+    .footer__text, .footer__titles, .footer__item {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer__span {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .separator {
+        margin-inline: 20px;
+    }
+}
